@@ -1,0 +1,11 @@
+.blog{
+    background-color: palevioletred;
+    
+}
+h2{
+    text-decoration: underline;
+}
+#second{
+    background-color: olive;
+    visibility: hidden;
+}
