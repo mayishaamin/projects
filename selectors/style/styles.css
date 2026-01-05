@@ -1,0 +1,83 @@
+/* Universal selector — styles everything */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Element selector — all <p> tags */
+p {
+    color: #333;
+    margin: 10px 0;
+}
+
+/* ID selector — one unique element */
+#main-title {
+    text-align: center;
+    color: teal;
+}
+
+/* Class selector — reusable style */
+.intro {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Group selector — applies same style to many */
+h1, h2, .menu li {
+    text-transform: uppercase;
+}
+
+/* Child combinator — <p> directly inside .container */
+.container > p {
+    background-color: #f0f8ff;
+}
+
+/* Descendant combinator — <a> inside .container */
+.container a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Adjacent sibling combinator — item right after another */
+p + a {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* General sibling combinator — all li after first */
+.menu li ~ li {
+    color: darkblue;
+}
+
+/* Attribute selector — all inputs with type text */
+input[type="text"] {
+    border: 2px solid green;
+}
+
+/* Another attribute selector — email */
+input[type="email"] {
+    border: 2px solid red;
+}
+
+/* Pseudo-class — when button is hovered */
+button:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+/* Pseudo-class — active menu item */
+.menu li.active {
+    font-weight: bold;
+}
+
+/* Pseudo-element — first letter bigger */
+.message::first-letter {
+    font-size: 2em;
+    color: crimson;
+}
+
+/* Pseudo-element — first line different style */
+.message::first-line {
+    text-transform: uppercase;
+}
